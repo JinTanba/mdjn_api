@@ -1,5 +1,5 @@
 import express from 'express';
-import { generateImg } from './generateImg.js';
+import { generateImg } from './src/generateImg.js';
 
 type GenerateRequest = {
     prompt: string;
@@ -29,7 +29,7 @@ app.post('/generate', (
 ) => {
     const handleGenerate = async () => {
         try {
-            const { prompt,imageId } = req.body;
+            const { prompt } = req.body;
             
             if (!prompt) {
                 return res.status(400).json({

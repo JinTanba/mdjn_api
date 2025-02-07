@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "ts-node --esm server.ts",
+    "dev": "ts-node --esm index.ts",
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node dist/index.js",
     "generate": "node --loader ts-node/esm generateImg.ts"
   },
   "author": "",
@@ -22,4 +22,6 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
+
+  
 }
